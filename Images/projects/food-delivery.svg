@@ -1,0 +1,23 @@
+<svg width="800" height="500" viewBox="0 0 800 500" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#1e3a8a"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="500" rx="30" fill="url(#bg)" />
+  <circle cx="210" cy="360" r="70" fill="#38bdf8" opacity="0.25"/>
+  <circle cx="590" cy="360" r="70" fill="#38bdf8" opacity="0.25"/>
+  <rect x="380" y="220" width="260" height="110" rx="20" fill="#38bdf8"/>
+  <rect x="260" y="260" width="260" height="90" rx="24" fill="#e2e8f0" opacity="0.15"/>
+  <path d="M330 300h160l40-40" fill="none" stroke="#ffffff" stroke-width="20" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="220" cy="360" r="60" fill="#e2e8f0"/>
+  <circle cx="580" cy="360" r="60" fill="#e2e8f0"/>
+  <path d="M220 320v80" stroke="#0f172a" stroke-width="18" stroke-linecap="round"/>
+  <path d="M580 320v80" stroke="#0f172a" stroke-width="18" stroke-linecap="round"/>
+  <rect x="200" y="195" width="260" height="70" rx="20" fill="#38bdf8"/>
+  <path d="M250 210h150" stroke="#0f172a" stroke-width="18" stroke-linecap="round"/>
+  <path d="M430 210h40" stroke="#0f172a" stroke-width="18" stroke-linecap="round"/>
+  <text x="400" y="120" fill="#ffffff" font-family="Arial, sans-serif" font-size="56" text-anchor="middle">AI Delivery</text>
+  <text x="400" y="170" fill="#cbd5e1" font-family="Arial, sans-serif" font-size="28" text-anchor="middle">Smart home chef matching</text>
+</svg>
