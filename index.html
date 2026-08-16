@@ -404,7 +404,7 @@ Git & GitHub
 
         <!-- Project 1 -->
 
-        <div class="project-card">
+        <div class="project-card" onclick="openProjectModal('food-delivery')" style="cursor: pointer;">
 
 
             <img src="images/projects/food-delivery.svg"
@@ -450,21 +450,19 @@ Git & GitHub
                 <div class="project-buttons">
 
 
-                    <a href="project-food-delivery.html"
-                       class="btn-project">
+                    <button type="button" class="btn-project" onclick="openProjectModal('food-delivery'); event.stopPropagation();">
 
                         View Details
 
-                    </a>
+                    </button>
 
 
 
-                    <a href="project-food-delivery.html"
-                       class="btn-live">
+                    <button type="button" class="btn-live" onclick="openProjectModal('food-delivery'); event.stopPropagation();">
 
                         View Details
 
-                    </a>
+                    </button>
 
 
 
@@ -484,7 +482,7 @@ Git & GitHub
         <!-- Project 2 -->
 
 
-        <div class="project-card">
+        <div class="project-card" onclick="openProjectModal('chatbot')" style="cursor: pointer;">
 
 
             <img src="images/projects/chatbot.svg"
@@ -532,22 +530,20 @@ Git & GitHub
                 <div class="project-buttons">
 
 
-                    <a href="#"
-                       class="btn-project">
+                    <button type="button" class="btn-project" onclick="openProjectModal('chatbot'); event.stopPropagation();">
 
                         GitHub
 
-                    </a>
+                    </button>
 
 
 
 
-                    <a href="#"
-                       class="btn-live">
+                    <button type="button" class="btn-live" onclick="openProjectModal('chatbot'); event.stopPropagation();">
 
                         Live Demo
 
-                    </a>
+                    </button>
 
 
                 </div>
@@ -568,7 +564,7 @@ Git & GitHub
         <!-- Project 3 -->
 
 
-        <div class="project-card">
+        <div class="project-card" onclick="openProjectModal('chemistry')" style="cursor: pointer;">
 
 
             <img src="images/projects/chemistry.svg"
@@ -616,22 +612,20 @@ Git & GitHub
                 <div class="project-buttons">
 
 
-                    <a href="#"
-                       class="btn-project">
+                    <button type="button" class="btn-project" onclick="openProjectModal('chemistry'); event.stopPropagation();">
 
                         GitHub
 
-                    </a>
+                    </button>
 
 
 
 
-                    <a href="#"
-                       class="btn-live">
+                    <button type="button" class="btn-live" onclick="openProjectModal('chemistry'); event.stopPropagation();">
 
                         Live Demo
 
-                    </a>
+                    </button>
 
 
 
@@ -651,6 +645,52 @@ Git & GitHub
 
 
 </section>
+
+
+<!-- ================= PROJECT MODAL ================= -->
+
+<div id="projectModal" class="modal">
+    <div class="modal-content">
+        <span class="close-btn" onclick="closeModal()">&times;</span>
+        
+        <div class="modal-body">
+            <h1 id="modalTitle"></h1>
+            <p class="modal-subtitle" id="modalSubtitle"></p>
+            
+            <img id="modalImage" src="" alt="Project" class="modal-image">
+            
+            <div class="modal-section">
+                <h2>Project Scope</h2>
+                <p id="modalScope"></p>
+            </div>
+            
+            <div class="modal-section">
+                <h2>Abstract</h2>
+                <p id="modalAbstract"></p>
+            </div>
+            
+            <div class="modal-section">
+                <h2>Aim & Objectives</h2>
+                <ul id="modalObjectives"></ul>
+            </div>
+            
+            <div class="modal-section">
+                <h2>Key Features</h2>
+                <ul id="modalFeatures"></ul>
+            </div>
+            
+            <div class="modal-section">
+                <h2>Technology Stack</h2>
+                <div class="tech-stack" id="modalTechStack"></div>
+            </div>
+            
+            <div class="modal-buttons">
+                <a href="#" id="modalGithub" class="btn-project" target="_blank">GitHub</a>
+                <a href="#" id="modalLive" class="btn-live" target="_blank">Live Demo</a>
+            </div>
+        </div>
+    </div>
+</div>
 
 
 
